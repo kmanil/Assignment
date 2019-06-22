@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.test.mvvm">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:name="com.test.mvvm.MvvmApp"
+        android:allowBackup="true"
+        android:icon="@drawable/dhanush"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dhanush"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.test.mvvm.ui.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.test.mvvm.ui.login.LoginActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.test.mvvm.ui.main.MainActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.test.mvvm.ui.feed.FeedActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.test.mvvm.ui.main.MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.mvvm.ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.test.mvvm.ui.loginregistration.LoginRegistrationActivity"
+            android:launchMode="singleTop"
+           />
+        <activity
+            android:name="com.test.mvvm.ui.fillexamform.FillExamFormActivity"
+            android:launchMode="singleTop"
+            />
+        <service android:name=".scheduler.SyncDataJobScheduler"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            />
+    </application>
+
+</manifest>

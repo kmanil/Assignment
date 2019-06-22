@@ -1,0 +1,90 @@
+<!--
+  ~  Copyright (C) 2017 MINDORKS NEXTGEN PRIVATE LIMITED
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~      https://mindorks.com/license/apache-v2
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License
+  -->
+
+<resources>
+    <string name="app_name">DhanushInfo</string>
+
+    <!--Toolbar menus-->
+    <string name="cut">Cut</string>
+    <string name="copy">Copy</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+
+    <!--Drawer-->
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+
+    <!--Drawer Menus-->
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="feed">My Feed</string>
+
+    <!--App Message-->
+
+    <!--Login-->
+    <string name="login_dummy">Login</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!--Login Validation-->
+    <string name="invalid_email_password">Please provide a valid email and password.</string>
+    <string name="invalidate_filed">Please fill all details.</string>
+
+    <!--about fragment-->
+    <string name="version">"version"</string>
+
+    <!--rating dialog-->
+    <string name="rate_us">Rate Us</string>
+
+    <!--play store-->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+
+    <!--button-->
+    <string name="later">Later</string>
+    <string name="submit">Submit</string>
+
+    <!--feed-->
+    <string name="title">My Feed</string>
+    <string name="open_source">Open Source</string>
+    <string name="blog">Blog</string>
+
+    <!--empty state-->
+    <string name="empty_screen">We do not have anything\nhere right now.</string>
+    <string name="please_retry">Please Retry</string>
+    <string name="retry">Retry</string>
+    <string name="register">Register</string>
+    <string name="registration_dummy">Registration</string>
+    <string name="name">Full name</string>
+    <string name="mobile">Mobile No.</string>
+    <string name="feed1">Item 1</string>
+    <string name="feed2">Item 2</string>
+    <string name="feed3">Item 3</string>
+    <string name="feed4">Item 4</string>
+    <string name="feed5">Item 5</string>
+    <string name="feed6">Item 6</string>
+    <string name="feed7">Item7</string>
+    <string name="fill_exam_form">Fill Form</string>
+    <string name="form_part1">Form Part 1</string>
+    <string name="address">Address</string>
+    <string name="next">Next</string>
+    <string name="form_part2">Form Part-2</string>
+    <string name="finish">Submit</string>
+    <string name="dialog_message">Form saved successfuly.</string>
+    <string name="dialog_title">Success!</string>
+    <string name="display_form">Display Form</string>
+</resources>

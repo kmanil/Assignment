@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:checked="true"
+            android:icon="@drawable/ic_info_24px"
+            android:title="@string/about"
+            android:visible="false"/>
+        <item
+            android:checked="true"
+            android:icon="@drawable/ic_star"
+            android:title="@string/rate_us"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/navItemAddForm"
+            android:checked="true"
+            android:icon="@drawable/ic_info_24px"
+            android:title="@string/fill_exam_form"
+            android:visible="true"/>
+        <item
+            android:id="@+id/navItemDisplayForm"
+            android:checked="true"
+            android:icon="@drawable/ic_info_24px"
+            android:title="@string/display_form"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/navItemFeed"
+            android:checked="true"
+            android:icon="@drawable/ic_rss_symbol"
+            android:title="@string/feed" />
+
+        <item
+            android:id="@+id/navItemLogout"
+            android:checked="true"
+            android:icon="@drawable/ic_power_settings_new_24px"
+            android:title="@string/logout" />
+
+        <item
+            android:checked="true"
+            android:icon="@drawable/ic_rss_symbol"
+            android:title="@string/feed1" />
+        <item
+            android:checked="true"
+            android:icon="@drawable/ic_rss_symbol"
+            android:title="@string/feed2" />
+        <item
+            android:checked="true"
+            android:icon="@drawable/ic_rss_symbol"
+            android:title="@string/feed3" />
+        <item
+            android:checked="true"
+            android:icon="@drawable/ic_rss_symbol"
+            android:title="@string/feed4" />
+        <item
+            android:checked="true"
+            android:icon="@drawable/ic_rss_symbol"
+            android:title="@string/feed5" />
+        <item
+            android:checked="true"
+            android:icon="@drawable/ic_rss_symbol"
+            android:title="@string/feed6" />
+        <item
+            android:checked="true"
+            android:icon="@drawable/ic_rss_symbol"
+            android:title="@string/feed7" />
+    </group>
+</menu>

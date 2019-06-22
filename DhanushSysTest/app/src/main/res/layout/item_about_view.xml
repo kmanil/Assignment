@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.test.mvvm.ui.about.AboutItemViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:onClick="@{() -> viewModel.onItemClick()}"
+            android:orientation="vertical"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+              <!--  <ImageView
+                    android:id="@+id/coverImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/dhanush"
+                    tools:src="@drawable/dhanush" />-->
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    style="@style/TextStyle.Heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@{viewModel.name}"
+                    tools:text="Android MVP Architecture" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/authorTextView"
+                        style="@style/TextStyle.Title.Sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@{viewModel.email}"
+                        tools:text="Amit Shekhar"
+                        />
+
+                    <TextView
+                        android:id="@+id/statusTextView"
+                        style="@style/TextStyle.Title.Sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        tools:text="Pending"
+                        android:textColor="@color/red_dark"
+                        android:layout_below="@+id/authorTextView"
+                        />
+
+                    <androidx.core.widget.ContentLoadingProgressBar
+                        android:id="@+id/address_looking_up"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+
+                      />
+                </RelativeLayout>
+
+
+               </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</layout>
